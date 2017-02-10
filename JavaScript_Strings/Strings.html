@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Strings</title>
+</head>
+<body>
+	<script>
+		
+
+		// 1 JavaScript Strings  
+
+
+		// un string debe contener comillas dobles o comillas sencillas
+
+		var name = "Luis Molina";
+		console.log(name);
+		var name = 'Luis Molina';
+		console.log(name);
+
+
+		console.log("");
+
+
+		// Puede utilizar comillas dentro de una cadena, siempre y cuando no coincidan con las comillas que rodean la cadena:
+
+		var answer = "It's alright";
+		console.log(answer);
+		var answer = "He is called 'Johnny'";
+		console.log(answer);
+		var answer = 'He is called "Johny" ';
+		console.log(answer);
+
+		console.log("");
+
+
+		
+		// 2. String Length
+
+
+		//La longitud de una cadena se encuentra en la longitud de propiedad incorporada:
+
+		var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		var sln = txt.length;
+		console.log(sln);
+
+
+
+		console.log("");
+
+
+		// 3. Caracteres especiales 
+
+		//Debido a que las cadenas deben estar escritas entre comillas, JavaScript no interpretará correctamente estas cadenas si no se usa el caracter de escape \ (barra invertida) :
+
+		var cadena1 = "Esto es \"muy bueno\"   ";
+		console.log(cadena1);
+		var cadena2 = 'Esto es \'muy bueno\' ';
+		console.log(cadena2);
+
+		//El carácter de escape (\) también se puede utilizar para insertar otros caracteres especiales en una cadena.
+
+		/*
+
+		   	\' 	single quote
+		 	\" 	double quote
+			\\ 	backslash
+
+			\b 	Backspace
+			\r 	Carriage Return
+			\f 	Form Feed
+			\t 	Horizontal Tabulator
+			\v 	Vertical Tabulator
+
+
+		*/
+
+		console.log("");
+
+
+		// 4.  Rompiendo líneas de código largas
+
+		// También puede dividir una línea de código dentro de una cadena de texto con una
+		// sola barra diagonal inversa:
+
+		var demo1 = 
+		"Hola Mundo";
+		console.log(demo1);
+
+		var demo2 = "Hola \
+Mundo";
+		console.log(demo2);
+
+
+		/*
+			El método \ no es el método preferido. Puede que no tenga apoyo universal.
+			Algunos navegadores no permiten espacios detrás del \ carácter.
+		*/
+
+
+		//Una forma más segura de romper una cadena, es usar la adición de cadena con el signo  +   :
+
+		var demo3 = "Hola " +
+					"Mundo";
+		console.log(demo3);
+
+
+		console.log("");
+
+
+		// 4. Los Strings tambien pueden ser objetos 
+
+		var name1 = "Luis";
+		var name2 = new String("Luis");
+		console.log(name1);
+		console.log(name2);
+
+
+		/*
+			
+			No cree cadenas como objetos. Se ralentiza la velocidad de ejecución.
+			La  palabra clave new complica el código. Esto puede producir algunos resultados inesperados:
+
+		*/
+
+
+
+		// Cuando se utiliza el operador ==, las cadenas iguales son iguales:
+
+
+		var name3 = "Luis";
+		var name4 = new String("Luis"); 
+
+		console.log(name3 == name4);
+
+
+		// Cuando se utiliza el operador ===, las cadenas iguales no son iguales, porque el operador === espera igualdad tanto en el tipo de variable como en el valor de cada variable.
+
+		var name5 = "Luis";
+		var name6 = new String("Luis"); 
+
+		console.log(name5 === name6);
+
+
+
+		// O incluso peor. Los objetos no se pueden comparar:
+
+		var name7 = new String("Luis"); 
+		var name8 = new String("Luis"); 
+
+		console.log(name8 == name7);
+		console.log(name8 === name7);
+
+
+	</script>
+</body>
+</html>
