@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>endsWith() Method</title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*
+			El método endsWith () determina si una cadena termina con los caracteres de una cadena especificada. 
+
+			Este método devuelve true si la cadena termina con los caracteres y false si no.
+
+		*/
+		var str = "Hola mundo, bienvenidos este es el universo";
+		var res = str.endsWith("universo");
+		console.log(res);
+
+
+		/*
+
+		Compruebe si una cadena termina con "mundo", suponiendo que la cadena
+		 tiene 10 caracteres:	
+		*/
+
+		var str = "Hola mundo, bienvenidos este es el universo";
+		var res = str.endsWith("mundo",10);
+		console.log(res);
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>indexOf() Method</title>
+</head>
+<body>
+	<script >
+		/*
+
+		El método indexOf () devuelve la posición de la primera aparición de un valor especificado en una cadena.
+		 Este método devuelve -1 si el valor para buscar no fue encontrado.
+			
+		*/
+
+		var str = "Hola mundo, Bievenidos al lenguaje Javascript";
+		var res = str.indexOf("mundo");
+		console.log(res);
+
+
+
+
+		// Encuentre la primera aparición de la letra "e" en una cadena:
+
+		var str = "Hola mundo, Bievenidos al lenguaje Javascript";
+		var res = str.indexOf("e");
+		console.log(res);
+
+
+
+
+		/*
+		Encuentre la primera aparición de la letra "e" en una cadena, iniciando la búsqueda en la posición 5:
+
+		*/
+
+		var str = "Hola mundo, Bievenidos al lenguaje Javascript";
+		var res = str.indexOf("e",30);
+		console.log(res);
+
+	</script>
+</body>
+</html>

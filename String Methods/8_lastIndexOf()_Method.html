@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>lastIndexOf() Method</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+	/*
+
+	El método lastIndexOf () devuelve la posición de la última ocurrencia de un valor especificado en una cadena.
+
+	 Nota: La cadena se busca desde el final hasta el principio, pero devuelve el índice que comienza al principio, en la posición 0. 
+
+	 Este método devuelve -1 si el valor para buscar nunca ocurre.
+
+	*/
+		var str = "Hola planeta tierra, tu eres un gran planeta.";
+		var res = str.lastIndexOf("planeta");
+		console.log(res);
+
+		//Busca una cadena para la última aparición de "planeta", comenzando la búsqueda en la posición 20:
+
+		var str = "Hola planeta tierra, tu eres un gran planeta.";
+		var res = str.lastIndexOf("planeta",20);
+		console.log(res);
+
+	</script>
+</body>
+</html>

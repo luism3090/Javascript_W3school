@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>replace() Method</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	/*
+
+	El método replace () busca una cadena para un valor especificado, o una expresión regular, y devuelve una nueva cadena donde se reemplazan los valores especificados.
+	
+	Nota:
+	Si está reemplazando un valor (y no una expresión regular), sólo se reemplazará la primera instancia del valor. Para reemplazar todas las ocurrencias de un valor especificado, utilice el modificador global (g) 
+
+	*/
+
+	var str = "Visite Microsoft";
+	var res = str.replace("Microsoft","Google");
+	console.log(res);
+
+
+
+
+	//Realizar un reemplazo global:
+
+	var str = "La casa azul, es muy azul y en ella habita el color azul";
+	var res = str.replace(/azul/g, "roja");
+	console.log(res);
+
+
+
+	//Realizar un reemplazo global, insensible a mayúsculas y minúsculas:
+
+	var str = "La casa azul, es muy AZUL y en ella habita el color azul";
+	var res = str.replace(/azul/gi, "roja");
+	console.log(res);
+
+
+
+	// Uso de una función para devolver el texto de reemplazo:
+
+
+	var str = "Mr Blue has a blue house and a blue car";
+	var res = str.replace(/blue|house|car/gi, 
+		function myFunction(x)
+		{
+			return x.toUpperCase();
+		});
+	console.log(res);
+
+
+
+
+</script>
+	
+</body>
+</html>

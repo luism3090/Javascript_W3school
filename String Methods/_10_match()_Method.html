@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>match() Method</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+	/*
+
+	El método match() busca una cadena para una coincidencia con una expresión regular, y devuelve las coincidencias, como un objeto Array.
+
+	Nota: Si la expresión regular no incluye el modificador g (para realizar una búsqueda global), el método match () devolverá sólo el primer resultado de la cadena.
+
+	 Este método devuelve null si no se encuentra ninguna coincidencia.
+
+	*/
+		var str = "Hola mundo, este es el lenguaje Javascript";
+		var res = str.match(/es/g);
+		console.log(res);
+
+		//Realizar una búsqueda global, sin distinción entre mayúsculas y minúsculas para "ain":
+
+		
+		var str = "The rain in SPAIN stays mainly in the plain";
+		var res = str.match(/ain/g);
+		console.log(res);
+
+
+	</script>
+</body>
+</html>

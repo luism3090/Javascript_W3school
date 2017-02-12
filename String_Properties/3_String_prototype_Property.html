@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>String prototype Property</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		/*
+			La propiedad prototipo le permite agregar nuevas propiedades y métodos a los tipos de objetos existentes.
+
+			 Nota: Prototype es una propiedad global que está disponible con casi todos los objetos JavaScript.
+
+		*/
+
+
+		function empleado(nombre,trabajo,fecha_nacimiento)
+		{
+			this.nombre = nombre;
+			this.trabajo = trabajo;
+			this.fecha_nacimiento = fecha_nacimiento;
+		}
+
+		empleado.prototype.salary = 2000;
+
+		var emp1 = new empleado("Luis","Programador",1990);
+
+		console.log(emp1.nombre);
+		console.log(emp1.trabajo);
+		console.log(emp1.fecha_nacimiento);
+		console.log(emp1.salary);
+
+		
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>localeCompare() Method</title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*
+			El método localeCompare () compara dos cadenas en la configuración regional actual. 
+			La configuración regional se basa en la configuración de idioma del navegador. 
+
+			El método localeCompare () devuelve un número que indica si la cadena viene antes, después o es igual como la cadena de comparación en el orden.
+			
+
+			-1 : 
+			si la cadena de referencia está ordenada antes de la cadena de comparación 
+
+			0 :
+			 si las dos cadenas son iguales 
+
+			1 :
+			si la cadena de referencia está ordenada después de la cadena de comparación
+
+		*/
+
+		var str1 = "ab";
+		var str2 = "cd";
+		var res = str1.localeCompare(str2);
+		console.log(res);
+
+
+		var str1 = "cd";
+		var str2 = "ab";
+		var res = str1.localeCompare(str2);
+		console.log(res);
+
+
+		var str1 = "ab";
+		var str2 = "ab";
+		var res = str1.localeCompare(str2);
+		console.log(res);
+
+
+
+	</script>
+</body>
+</html>
