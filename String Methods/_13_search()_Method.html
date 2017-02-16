@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>search() Method</title>
+</head>
+<body>
+	<script>
+
+	/*
+
+	El método search () busca una cadena para un valor especificado y devuelve la posición de la coincidencia. 
+
+	El valor de búsqueda puede ser cadena o una expresión regular. 
+
+	Este método devuelve -1 si no se encuentra ninguna coincidencia.
+
+	*/
+		var str = "Visita Javascript";
+		var n = str.search("Javascript");
+		console.log(n);
+
+		//Realice una búsqueda sensible a mayúsculas y minúsculas:
+
+		var str = "Mr. Blue has a blue house";
+		var n = str.search("blue");
+		console.log(n);
+
+		// Realice una búsqueda sin distinción entre mayúsculas y minúsculas:
+
+		var str = "Mr. Blue has a blue house";
+		var n = str.search(/blue/i);
+		console.log(n);
+
+	</script>
+</body>
+</html>

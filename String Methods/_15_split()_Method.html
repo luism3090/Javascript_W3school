@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>split() Method</title>
+</head>
+<body>
+	<script>
+		
+		// El método split() se utiliza para dividir una cadena en una matriz de subcadenas y devuelve la nueva matriz.
+
+		//  Sugerencia: Si se utiliza una cadena vacía ("") como separador, la cadena se dividirá entre cada carácter.
+
+		//   Nota: El método split() no cambia la cadena original.
+
+
+
+		//Omita el parámetro separador:
+		var str = "¿Qué estas haciendo hoy?";
+		var res = str.split();
+		console.log(res);
+
+		//Separa cada charater, incluyendo espacio en blanco:
+		var str = "¿Qué estas haciendo hoy?";
+		var res = str.split("");
+		console.log(res);
+
+		//Utilice el espacion como caracter separador:
+		var str = "¿Qué estas haciendo hoy?";
+		var res = str.split(" ");
+		console.log(res);
+
+		//Utilice el parámetro de límite:
+		var str = "¿Qué estas haciendo hoy?";
+		var res = str.split(" ",2);
+		console.log(res);
+
+		//Utilice una letra como separador:
+		var str = "¿Qué estas haciendo hoy?";
+		var res = str.split("e");
+		console.log(res);
+
+
+	</script>
+</body>
+</html>

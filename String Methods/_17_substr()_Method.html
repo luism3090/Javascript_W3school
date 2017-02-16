@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>substr() Method</title>
+</head>
+<body>
+	<script>
+		// El método substr () extrae partes de una cadena, comenzando en el carácter en la posición especificada, y devuelve el número especificado de caracteres.
+
+		//  Sugerencia: Para extraer caracteres del final de la cadena, utilice un número de inicio negativo (Esto no funciona en IE 8 y anteriores).
+
+		//   Nota: El método substr () no cambia la cadena original
+
+
+		var str = "Hola mundo!";
+		var res = str.substr(1,4);
+		console.log(res);
+
+		//Comience la extracción en la posición 2, y extraiga el resto de la cadena:
+
+		var str = "Hola mundo!";
+		var res = str.substr(2);
+		console.log(res);
+
+		// Extract only the first character:
+
+		var str = "Hola mundo!";
+		var res = str.substr(0,1);
+		console.log(res);
+
+		
+		// Extract only the last character:
+		var str = "Hola mundo!";
+		var res = str.substr(str.length-1,1);
+		console.log(res);
+
+
+	</script>
+</body>
+</html>
