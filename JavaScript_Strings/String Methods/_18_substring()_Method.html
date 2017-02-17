@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>substring() Method</title>
+</head>
+<body>
+	<script>
+	// El método substring () extrae los caracteres de una cadena, entre dos índices especificados, y devuelve la nueva subcadena.
+
+	//  Este método extrae los caracteres de una cadena entre "inicio" y "fin", sin incluir "fin" en sí. 
+
+	//  Si "start" es mayor que "end", este método cambiará los dos argumentos, lo que significa str.substring (1, 4) == str.substring (4, 1). 
+
+	//  Si "start" o "stop" es menor que 0, se trata como si fuera 0.
+
+
+		var str = "Hola mundo";
+		var n = str.substring(1,4);
+		console.log(n);
+
+		//Comience la extracción en la posición 2, y extraiga el resto de la cadena:
+
+		var str = "Hola mundo";
+		var n = str.substring(2);
+		console.log(n);
+
+		//Si "start" es mayor que "end", se intercambiarán los dos argumentos:
+
+		var str = "Hola mundo";
+		var n = str.substring(4,1);
+		console.log(n);
+
+
+		// Si "start" es menor que 0, comenzará la extracción desde la posición de índice 0:
+
+		var str = "Hola mundo";
+		var n = str.substring(-3);
+		console.log(n);
+
+
+		// extrayendo el primer caracter:
+
+		var str = "Hola mundo";
+		var n = str.substring(0,1);
+		console.log(n);
+
+		// extrayendo el ultimo caracter:
+
+		var str = "Hola mundo!";
+		var n = str.substring(str.length-1,str.length);
+		console.log(n);
+
+
+	</script>	
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript Numbers</title>
+</head>
+<body>
+	<script>
+
+
+		// Los números de JavaScript se pueden escribir con o sin decimales:
+
+		var x = 34.01;
+		var y = 34;
+		console.log(x);
+		console.log(y);
+
+
+
+		console.log("");
+		// Los números extra grandes o extra pequeños se pueden escribir con la notación científica (exponente):
+
+		var x = 123e5;    
+		var y = 123e-5;   
+		console.log(x);
+		console.log(y);
+
+
+		console.log("");
+		// Enteros (números sin una notación de período o exponente) se consideran exactos hasta 15 dígitos.
+
+		var x = 999999999999999;   // x será 999999999999999
+		var y = 9999999999999999;  // y será 10000000000000000
+
+		console.log(x);
+		console.log(y);
+
+
+		console.log("");
+		// El número máximo de decimales es 17, pero la aritmética de punto flotante no siempre es 100% exacta:
+
+		var x = 1.0000000000000004;				// con 16 decimales
+		var y = 1.00000000000000004;			// con 17 decimales		
+		console.log(x);
+		console.log(y);
+
+	</script>
+</body>
+</html>
