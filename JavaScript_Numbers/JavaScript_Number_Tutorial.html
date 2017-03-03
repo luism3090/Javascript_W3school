@@ -27,7 +27,7 @@
 
 
 		console.log("");
-		// Enteros (números sin una notación de período o exponente) se consideran exactos hasta 15 dígitos.
+		// Enteros: (números sin una notación de período o exponente) se consideran exactos hasta 15 dígitos.
 
 		var x = 999999999999999;   // x será 999999999999999
 		var y = 9999999999999999;  // y será 10000000000000000
@@ -43,6 +43,40 @@
 		var y = 1.00000000000000004;			// con 17 decimales		
 		console.log(x);
 		console.log(y);
+
+
+
+		console.log("");
+		//JavaScript interpreta las constantes numéricas como hexadecimales si están precedidas por 0x.
+
+		var x = 0xFF;
+		console.log(x);
+
+		// Nota: 
+		// Nunca escriba un número con un cero inicial (como 07).
+		//  Algunas versiones de JavaScript interpretan los números como octales si están escritos con un cero a la izquierda.
+
+
+
+		console.log("");
+		// De forma predeterminada, JavaScript muestra números como 10 decimales de base. 
+
+		// Pero puede utilizar el método toString() para dar salida a los números como base 16 (hex), base 8 (octal) o base 2 (binario).
+
+		var numero = 128;
+		console.log(numero);
+		console.log(numero.toString(16));
+
+		
+
+
+
+		/*
+			128 
+
+	
+		*/
+
 
 	</script>
 </body>
